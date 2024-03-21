@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Landing Page</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+
+       
+        #cta {
+            display: flex;
+            flex-direction: column; /* Adicionado para alinhar elementos verticalmente */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #cta form {
+            max-width: 400px; 
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            width: 100%; 
+        }
+
+        #cta form input[type="text"],
+        #cta form input[type="email"],
+        #cta form input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        #cta form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            background-color: #db0000;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        #cta form input[type="submit"]:hover {
+            background-color: #0e0404;
+        }
+
+        /* Ajuste da margem inferior da seção Recursos */
+        #features {
+            margin-bottom: 20px; /* Ajustado para uma margem inferior padrão */
+        }
+
+        /* Media queries */
+        @media (max-width: 576px) {
+            #hero h1 {
+                font-size: 20px; /* Reduzindo o tamanho do texto principal em telas menores */
+            }
+        }
+
+        @media (max-width: 400px) {
+            #hero h1 {
+                font-size: 18px; 
+            }
+        }
+
+        
+        header {
+            background-color: #db0000; 
+            color: #fff; 
+            padding: 20px 0; 
+            text-align: center; 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+        }
+
+        header h1 {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- <header>
+        <h1>123Teste</h1>
+    </header> -->
+    <main>
+        <section id="hero" class="d-flex justify-content-center align-items-center" style="background-color: #f5f5dc;"> 
+            <div class="text-center">
+                <div class="container">
+                    <h1>Digitar Aqui o Texto Principal!</h1>
+                    <!-- <p>Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada de 45 AC. Richard McClintock, um professor de latim do Hampden-Sydney College na Virginia, pesquisou uma das mais obscuras palavras em latim, consectetur, oriunda de uma passagem de Lorem Ipsum, e, procurando por entre citações da palavra na literatura clássica, descobriu a sua indubitável origem. Lorem Ipsum vem das seções 1.10.32 e 1.10.33 do "de Finibus Bonorum et Malorum" (Os Extremos do Bem e do Mal), de Cícero, escrito em 45 AC. Este livro é um tratado de teoria da ética muito popular na época da Renascença. A primeira linha de Lorem Ipsum, "Lorem Ipsum dolor sit amet..." vem de uma linha na seção 1.10.32.
+
+                    O trecho padrão original de Lorem Ipsum, usado desde o século XVI, está reproduzido abaixo para os interessados. Seções 1.10.32 e 1.10.33 de "de Finibus Bonorum et Malorum" de Cicero também foram reproduzidas abaixo em sua forma exata original, acompanhada das versões para o inglês da tradução feita por H. Rackham em 1914.</p> -->
+                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta" class="d-flex justify-content-center align-items-center">
+            <div>
+                <h2>Entre em contato</h2>
+                <p>Para mais informações, entre em contato conosco:</p>
+                <form action="enviar_email.php" method="POST">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Enviar" class="btn btn-primary">
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
